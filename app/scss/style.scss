@@ -1,3 +1,14 @@
-body{
-    background-color: red;
-}
+@import'global/reset';
+@import'global/vars';
+@import'global/fonts';
+@import'global/libs';
+@import'global/global';
+
+
+// BLOCK
+@import'./block/header.scss';
+@import'./block/content.scss';
+
+
+// COMPONENTS
+@import'./components/tab.scss';

@@ -1,0 +1,207 @@
+.header {
+  background-color: rgba(22, 21, 31, 0.7);
+  margin-bottom: 0.625rem;
+
+  @media (max-width:51rem) {
+    background-color: #242332;
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    height: 5.6rem;
+    padding: 1.2rem 2.5rem 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #07050A 0%, rgba(0, 0, 0, 0) 100%);
+
+    @media (max-width:51rem) {
+      padding: 4px;
+      background: none;
+      height: 48px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 3.1rem;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.0);
+
+    @media (max-width:51rem) {
+      border-radius: 0;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+      box-shadow: 0.375rem 0rem 0.9375rem rgba(255, 255, 255, 0.25),
+        -0.375rem 0rem 0.9375rem rgba(255, 255, 255, 0.25);
+
+      @media (max-width:816px) {
+        box-shadow: none;
+        background-color: transparent;
+      }
+    }
+
+    &--back {
+      box-shadow: -0.1875rem 0rem 0.1875rem rgba(255, 255, 255, 0.25);
+
+      @media (max-width:816px) {
+        box-shadow: none;
+      }
+    }
+
+    &--home {
+      box-shadow: 0.2rem 0rem 0.2rem rgba(255, 255, 255, 0.25);
+
+      @media (max-width:816px) {
+        box-shadow: none;
+      }
+
+    }
+  }
+
+  &__link-img {
+    margin-right: 0.75rem;
+    font-weight: bold;
+    height: 1.75rem;
+
+    @media (max-width:51rem) {
+      height: 28px;
+    }
+  }
+
+  &__link-span {
+    text-transform: uppercase;
+
+    @media (max-width:51rem) {
+      display: none;
+    }
+  }
+
+  &__currency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(13, 11, 15, 0.7);
+    border-radius: 6.25rem;
+    margin-right: auto;
+    padding-right: 1.3rem;
+    position: relative;
+    min-width: 11.1875rem;
+    padding-left: 4.25rem;
+
+    @media (max-width:51rem) {
+      height: 20px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &--coins {
+      margin-left: auto;
+      margin-right: 3.1rem;
+
+      @media (max-width:51rem) {
+        margin-right: 25.6px;
+      }
+    }
+  }
+
+  &__currency-img {
+    position: absolute;
+    left: 0;
+
+    @media (max-width:51rem) {
+      position: static;
+    }
+
+    &--coins {
+      width: 4.3125rem;
+      height: 4.3125rem;
+    }
+
+    &--crystals {
+      width: 5.125rem;
+      height: 5.125rem;
+    }
+
+    &--coins,
+    &--crystals {
+      @media (max-width:51rem) {
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+        margin-left: -10px;
+      }
+    }
+  }
+
+  &__currency-amount {
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    color: white;
+    text-align: center;
+    margin-right: 1.1rem;
+    white-space: nowrap;
+    margin-left: auto;
+
+    @media (max-width:51rem) {
+      margin-right: 18px;
+      font-size: 13px;
+    }
+  }
+
+  &__currency-name {
+    display: block;
+    font-weight: 500;
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    color: #B9B7EA;
+    text-align: left;
+
+    @media (max-width:51rem) {
+      display: none;
+    }
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__currency-btn {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: linear-gradient(45deg, #30C325 9.09%, #2C812A 100%);
+    border: 0.0625rem solid #21CC14;
+    box-shadow: 0rem 0.1rem 0rem rgba(33, 204, 20, 0.50);
+    border-radius: 0.3rem;
+    padding: 0;
+    transition: .3s;
+
+    @media (max-width:51rem) {
+      width: 20.8px;
+      height: 20.8px;
+      border-radius: 0.4rem;
+    }
+
+    @media (max-width:35.9375rem) {
+      border-radius: 0.8rem;
+    }
+
+    &:active {
+      box-shadow: inset 0px 5px 3px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__currency-btn-img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+}
